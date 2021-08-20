@@ -27,7 +27,7 @@
     "strict": true,
     "target": "es2019"
   },
-  "exclude": ["**/dist/**", "**/node_modules/**"],
+  "exclude": ["**/cdk.out/**", "**/dist/**", "**/node_modules/**"],
   "include": [
     "../../../../.*",
     "../../../../*",
