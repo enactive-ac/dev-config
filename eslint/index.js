@@ -18,6 +18,10 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-redeclare': 'error',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { ignoreRestSiblings: true },
+    ],
     '@typescript-eslint/strict-boolean-expressions': 'error',
     'comma-dangle': ['error', 'always-multiline'],
     'deprecation/deprecation': ['error'],
