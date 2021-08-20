@@ -27,5 +27,10 @@
     "strict": true,
     "target": "es2019"
   },
-  "exclude": ["**/dist/**", "**/node_modules/**"]
+  "exclude": ["**/dist/**", "**/node_modules/**"],
+  "include": [
+    "../../../../.eslintrc.js",
+    "../../../../.prettierrc.js",
+    "../../../../jest.config.js"
+  ]
 }
