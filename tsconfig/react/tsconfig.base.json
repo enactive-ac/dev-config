@@ -1,3 +1,10 @@
 {
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    /** This is particularly annoying with React.useEffect, not worth having it in react. */
+    "noImplicitReturns": false,
+    "target": "es2017"
+  },
   "extends": "../tsconfig.base.json"
 }
