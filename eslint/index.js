@@ -7,7 +7,7 @@ module.exports = {
     'plugin:jest/all',
     'prettier',
   ],
-  ignorePatterns: ['build/', 'coverage/', 'dist/', 'node_modules/'],
+  ignorePatterns: ['build/', 'cdk.out/', 'coverage/', 'dist/', 'node_modules/'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 11,
