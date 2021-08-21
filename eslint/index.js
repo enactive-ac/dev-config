@@ -46,6 +46,7 @@ module.exports = {
       },
     ],
     'jest/lowercase-name': ['error', { ignore: ['describe'] }],
+    'jest/prefer-expect-assertions': false,
     'no-console': 'warn',
     'sort-keys-fix/sort-keys-fix': 'error',
   },
