@@ -22,6 +22,7 @@ module.exports = {
       'error',
       { ignoreRestSiblings: true },
     ],
+    '@typescript-eslint/restrict-template-expressions': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
     'comma-dangle': ['error', 'always-multiline'],
     'deprecation/deprecation': ['error'],
