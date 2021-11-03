@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['react-app', 'react-app/jest', `${__dirname}/index.js`],
   rules: {
+    'jest/require-hook': 'off',
     'react/jsx-handler-names': ['error'],
     'react/jsx-sort-props': [
       'error',
