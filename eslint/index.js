@@ -14,21 +14,17 @@ module.exports = {
     project: `${process.cwd()}/tsconfig.json`,
     sourceType: 'module',
   },
-  plugins: ['deprecation', 'sort-keys-fix', 'import'],
+  plugins: ['sort-keys-fix', 'import'],
   rules: {
     '@typescript-eslint/no-floating-promises': 'error',
-    '@typescript-eslint/no-redeclare': 'error',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { ignoreRestSiblings: true },
-    ],
-    '@typescript-eslint/restrict-template-expressions': 'error',
-    '@typescript-eslint/strict-boolean-expressions': 'error',
-    'comma-dangle': ['error', 'always-multiline'],
-    'deprecation/deprecation': ['error'],
-    'import/no-unresolved': ['error', { commonjs: true }],
+    '@typescript-eslint/no-redeclare': 'warn',
+    '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
+    '@typescript-eslint/restrict-template-expressions': 'warn',
+    '@typescript-eslint/strict-boolean-expressions': 'warn',
+    'comma-dangle': ['warn', 'always-multiline'],
+    'import/no-unresolved': ['warn', { commonjs: true }],
     'import/order': [
-      'error',
+      'warn',
       {
         alphabetize: {
           caseInsensitive: false,
@@ -46,10 +42,10 @@ module.exports = {
         pathGroupsExcludedImportTypes: ['react'],
       },
     ],
-    'jest/lowercase-name': ['error', { ignore: ['describe'] }],
     'jest/prefer-expect-assertions': 'off',
+    'jest/prefer-lowercase-title': ['warn', { ignore: ['describe'] }],
     'no-console': 'warn',
-    'sort-keys-fix/sort-keys-fix': 'error',
+    'sort-keys-fix/sort-keys-fix': 'warn',
   },
   settings: {
     jest: { version: 27 },
