@@ -14,7 +14,7 @@ module.exports = {
     project: `${process.cwd()}/tsconfig.json`,
     sourceType: 'module',
   },
-  plugins: ['sort-keys-fix', 'import'],
+  plugins: ['@typescript-eslint', 'sort-keys-fix', 'import'],
   rules: {
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-redeclare': 'warn',
