@@ -20,12 +20,14 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2019"
+    "target": "es2019",
+
+    /* Defer to linting where we can control the severity */
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "exclude": ["**/cdk.out/**", "**/dist/**", "**/node_modules/**"],
   "include": [
