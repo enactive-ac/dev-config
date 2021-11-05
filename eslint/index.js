@@ -49,6 +49,12 @@ module.exports = {
     'sort-keys-fix/sort-keys-fix': 'warn',
   },
   settings: {
+    /** Ensure we can import *.d.ts types */
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
     jest: { version: 27 },
   },
 };
