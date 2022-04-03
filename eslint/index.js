@@ -4,10 +4,21 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:jest/all',
     'prettier',
   ],
   ignorePatterns: ['build/', 'cdk.out/', 'coverage/', 'dist/', 'node_modules/'],
+  overrides: [
+    {
+      extends: [
+        'plugin:jest/all',
+      ],
+      files: [
+        '**/*.spec.*',
+        '**/__tests__/**',
+      ],
+      plugins: ['jest'],
+    }
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 11,
