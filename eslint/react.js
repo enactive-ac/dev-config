@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['react-app', 'react-app/jest', `${__dirname}/index.js`],
+  extends: ['react-app', `${__dirname}/index.js`],
   rules: {
     'jest/require-hook': 'off',
     /** Turn off to support: `import React from 'react'` */
