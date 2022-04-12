@@ -34,6 +34,7 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'warn',
     'comma-dangle': ['warn', 'always-multiline'],
     'deprecation/deprecation': ['warn'],
+    'import/no-named-as-default-member': 'off',
     'import/no-unresolved': ['warn', { commonjs: true }],
     'import/order': [
       'warn',
